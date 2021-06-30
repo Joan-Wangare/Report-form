@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>REPORT</title> 
+        <meta charset="UTF-8">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="hero">
+            <div class="form-bx">
+                <div class="title">
+                    <h2>UBUNIFU STAFF DAILY REPORT</h2>
+                </div>
+                <div class="btn-btn">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle" onclick="teacher()">Teachers</button>
+                    <button type="button" class="toggle" onclick="reception()">Reception</button>
+                </div>
+                <form id="teacher" class="input-group">
+                    <input type="text" class="input" placeholder="Name" required> 
+                    <br>
+                    <input type="date" class="input" required>
+                    <br>
+                    <input class="input" type="text" placeholder="No. of Students Present" required>
+                    <div class="select">
+                        <select required>
+                            <option>TIME</option>
+                            <option value="8:00-10:00">8:00-10:00</option>
+                            <option value="11:00-1:00">11:00-1:00</option>
+                            <option value="2:00-4:00">2:00-4:00</option>
+                            <option value="4:30-5:30">4:30-5:30</option>
+                        </select>
+                    </div>
+                    <div class="select">
+                        <select>
+                            <option>GROUP</option>
+                            <option value="Group 1">Group 1</option>
+                            <option value="Group 2">Group 2</option>
+                            <option value="WebDesign">WebDesign</option>
+                        </select>
+                    </div>
+                    <div class="select">
+                        <select class="multi_select">
+                            <option>TOPICS</option>
+                            <option value="INTRODUCTION">INTRODUCTION</option>
+                            <option value="MS WORD">MS WORD</option>
+                            <option value="MS WINDOWS">MS WINDOWS</option>
+                            <option value="INTERNET & EMAIL">INTERNET & EMAIL</option>
+                            <option value="MS EXCEL">MS EXCEL</option>
+                            <option value="MS PUBLISHER">MS PUBLISHER</option>
+                            <option value="MS POWERPOINT">MS POWERPOINT</option>
+                            <option value="MS ACCESS">MS ACCESS</option>
+                            <option value="DESKTOP PUBLISHING">DESKTOP PUBLISHING</option>
+                            <option value="KEYBOARDING">KEYBOARDING</option>
+                        </select>
+                    </div>
+                    <textarea class="textarea"></textarea>
+                    <div class="btn-s">
+                        <button class="btn">SUBMIT</button>
+                        <button class="btn1">VIEW POST</button>
+                    </div>
+                </form>
+                <form id="reception" class="input-group">
+                    <input type="text" class="input" placeholder="Name" required>
+                    <input type="date" class="input" required>
+                    <input type="number" class="input" placeholder="New registrations" required>
+                    <input type="number" class="input" placeholder="Cash brought forward" required>
+                    <input type="number" class="input" placeholder="Today's cash collection" required>
+                    <input type="number" class="input" placeholder="Today's expenses" required>
+                    <input type="number" class="input" placeholder="Total cash balance" required>
+                    <input class="input" type="text" placeholder="Balance brought forward" required>
+                    <div class="btn-s">
+                        <button class="btn">SUBMIT</button>
+                        <button class="btn1">VIEW POST</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+<!--
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        Latest compiled and minified JavaScript 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+        (Optional) Latest compiled and minified JavaScript translation files
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/i18n/defaults-*.min.js"></script>
+        <script src="js.js" ></script>-->
+        
+        <script>
+            var x = document.getElementById("teacher");
+            var y = document.getElementById("reception");
+            var z = document.getElementById("btn");
+
+            function reception(){
+                x.style.left = "-600px";
+                y.style.left = "50px";
+                z.style.left = "150px";
+            }
+
+            function teacher(){
+                x.style.left = "50px";
+                y.style.left = "650px";
+                z.style.left = "0px";
+            }
+
+        </script>
+
+    </body>
+</html>
