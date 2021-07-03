@@ -80,7 +80,7 @@ label{
 }
 .textarea{
     resize: none;
-    height: 100px;
+    height: 70px;
     border-top: 0;
     border-right: 1px solid #d5dbd9;
     border-left: 1px solid #d5dbd9;
@@ -147,6 +147,10 @@ label{
 .btn1{
     float: right;
 }
+.btn1 a{
+    text-decoration: none;
+    color: #222121;
+}
 .input:last-child{
     margin-bottom: 0;
 }
@@ -161,4 +165,47 @@ label{
 }
 #reception{
     left: 550px;
+}
+
+/*blog file css*/
+
+.blog{
+    width: 700px;
+    height: 200px;
+    position: relative;
+    margin: 10px auto;
+    background: #fff;
+    padding: 5px;
+    border-radius: 30px;
+}
+.name{
+    font-weight: 700;
+    margin-top: 15px;
+    text-transform: uppercase;    
+    text-align: center;
+}
+.li-st{
+    margin: 15px auto;
+    text-align: center;
+}
+.list{
+    list-style: none;
+}
+.list li{
+    font-weight: 600;
+    padding: 10px 40px;
+    display: inline;
+}
+.topic{
+    list-style: none;
+    text-align: center;
+    margin: 15px auto;
+}
+.l-ist li{
+    font-weight: 600;
+    padding: 10px 100px;
+    display: inline;
+}
+.p{
+    margin: 25px 12.5px 0 12.5px;
 }
